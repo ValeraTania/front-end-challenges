@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+:root{
+  --red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+--veryDarkBlue: hsl(234, 12%, 34%);
+--grayishBlue: hsl(229, 6%, 66%);
+--veryLightGray: hsl(0, 0%, 98%);
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--veryLightGray);
+    color:var(--grayishBlue);
+    
+}
+.container{
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+span{
+    color:var(--veryDarkBlue);
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+    .text p:first-child{
+        font-size: 20px;
+        }
+
+.card{
+    line-height: 26px;
+
+}
+
+.text{
+    width: 300px;
+    margin: auto;
+}
+
+.card__supervisor,
+.card__teamBuilder,
+.card__karma,
+.card__calculator{
+    height: 220px;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 12px 24px var(--grayishBlue);
+    border-top: 3px solid var(--cyan);
+    margin: 24px auto;
+    text-align: left;
+    padding: 6px 24px;
+}
+
+.card__teamBuilder{
+    border-top: 3px solid var(--red);
+}
+
+.card__karma{
+    border-top: 3px solid var(--orange);
+}
+
+.card__calculator{
+    border-top: 3px solid var(--blue);
+
+}
+
+h3{
+    color: var(--veryDarkBlue);
+}
+
+img{
+    position: relative;
+    left: 70%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+
+    /*-------------DESKTOP--------------------*/
+    @media (min-width:620px) {
+
+        .container{
+            width: 90%;
+         
+        }
+
+        .text{
+            width: 70%;
+            margin: auto;
+        }
+        .text p:nth-child(2){
+            width: 50%;
+        }
+        
+        span{
+            color:var(--veryDarkBlue);
+            font-size: 42px;
+            font-weight: 600;
+            }
+        
+            .text p:first-child{
+                font-size: 42px;
+                }
+
+        .card{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            flex-wrap: wrap;
+           
+        }
+
+        .card__teamAndKarma{
+            margin: auto;
+        }
+
+        
+    }
